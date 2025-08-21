@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Orizzonte Niterói - Informações</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flowbite (para modais) -->
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-md mx-auto p-4">
+    
+    <!-- Título -->
+    <h1 class="text-2xl font-bold text-center mb-6">
+      Hotel Orizzonte Niterói
+    </h1>
+
+    <!-- Botões de Navegação -->
+    <div class="flex flex-wrap justify-center gap-3">
+
+      <!-- Academia -->
+      <button data-modal-target="modal-academia" data-modal-toggle="modal-academia"
+        class="p-3 bg-white rounded-xl shadow hover:bg-gray-200 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="w-8 h-8 mx-auto" alt="Academia" />
+        <p class="text-xs mt-1">Academia</p>
+      </button>
+
+      <!-- Lavanderia -->
+      <button data-modal-target="modal-lavanderia" data-modal-toggle="modal-lavanderia"
+        class="p-3 bg-white rounded-xl shadow hover:bg-gray-200 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/5829/5829152.png" class="w-8 h-8 mx-auto" alt="Lavanderia" />
+        <p class="text-xs mt-1">Lavanderia</p>
+      </button>
+
+      <!-- Elevador -->
+      <button data-modal-target="modal-elevador" data-modal-toggle="modal-elevador"
+        class="p-3 bg-white rounded-xl shadow hover:bg-gray-200 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/2989/2989988.png" class="w-8 h-8 mx-auto" alt="Elevador" />
+        <p class="text-xs mt-1">Elevador</p>
+      </button>
+
+      <!-- Quarto -->
+      <button data-modal-target="modal-quarto" data-modal-toggle="modal-quarto"
+        class="p-3 bg-white rounded-xl shadow hover:bg-gray-200 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="w-8 h-8 mx-auto" alt="Quarto" />
+        <p class="text-xs mt-1">Serviço Quarto</p>
+      </button>
+
+      <!-- Piscina -->
+      <button data-modal-target="modal-piscina" data-modal-toggle="modal-piscina"
+        class="p-3 bg-white rounded-xl shadow hover:bg-gray-200 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="w-8 h-8 mx-auto" alt="Piscina" />
+        <p class="text-xs mt-1">Piscina</p>
+      </button>
+
+      <!-- Sauna -->
+      <button data-modal-target="modal-sauna" data-modal-toggle="modal-sauna"
+        class="p-3 bg-white rounded-xl shadow hover:bg-gray-200 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/2995/2995650.png" class="w-8 h-8 mx-auto" alt="Sauna" />
+        <p class="text-xs mt-1">Sauna</p>
+      </button>
+    </div>
+
+    <!-- Rodapé -->
+    <p class="text-center text-sm mt-6 text-gray-500">
+      Estamos à disposição para dúvidas ou pedidos.
+    </p>
+  </div>
+
+  <!-- ============ MODAIS ============ -->
+
+  <!-- Modal Academia -->
+  <div id="modal-academia" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow">
+      <h2 class="text-xl font-bold mb-2">🏋️ Academia</h2>
+      <p>Funciona de <b>6h às 21h</b>.<br>
+      É necessário ligar para a recepção e agendar com pelo menos <b>1h de antecedência</b>.</p>
+      <button data-modal-hide="modal-academia" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Modal Lavanderia -->
+  <div id="modal-lavanderia" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow">
+      <h2 class="text-xl font-bold mb-2">🧺 Lavanderia</h2>
+      <p>
+        Recolhimento até <b>9h da manhã</b>, devolução até <b>21h do dia seguinte</b>.<br><br>
+        <b>Sábado:</b> somente serviço expresso até 9h.<br>
+        <b>Não funciona:</b> domingos e feriados.
+      </p>
+      <button data-modal-hide="modal-lavanderia" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Modal Elevador -->
+  <div id="modal-elevador" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow">
+      <h2 class="text-xl font-bold mb-2">⬆️ Elevadores</h2>
+      <p>
+        Permitido <b>até 2 pessoas</b> por vez.<br>
+        Famílias podem usar até <b>4 pessoas</b>.
+      </p>
+      <button data-modal-hide="modal-elevador" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Modal Serviço de Quarto -->
+  <div id="modal-quarto" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow">
+      <h2 class="text-xl font-bold mb-2">🍽️ Serviço de Quarto</h2>
+      <p>
+        Funciona de <b>11h às 23h</b>.<br>
+        Após as refeições, ligar <b>*4</b> para retirada dos utensílios.<br>
+        <b>Importante:</b> não deixar os utensílios na porta.
+      </p>
+      <button data-modal-hide="modal-quarto" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Modal Piscina -->
+  <div id="modal-piscina" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow">
+      <h2 class="text-xl font-bold mb-2">🏊 Piscina</h2>
+      <p>
+        Funciona todos os dias de <b>9h às 17h</b>.<br><br>
+        Menores de idade devem estar sempre acompanhados de um responsável.<br>
+        <b>Não permitido:</b> aparelhos de som e recipientes de vidro.
+      </p>
+      <button data-modal-hide="modal-piscina" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Modal Sauna -->
+  <div id="modal-sauna" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow">
+      <h2 class="text-xl font-bold mb-2">💦 Hidromassagem & Sauna</h2>
+      <p>
+        Funcionam de <b>8h às 20h</b>.<br>
+        É necessário ligar e agendar com a recepção com pelo menos <b>1h de antecedência</b>.
+      </p>
+      <button data-modal-hide="modal-sauna" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg">Fechar</button>
+    </div>
+  </div>
+
+</body>
+</html>
